@@ -26,7 +26,7 @@ public class Solution {
                 // Adjust the window by removing the ith character
                 if (map.containsKey(str.charAt(i))) {
                     map.put((str.charAt(i)), map.get((str.charAt(i))) + 1);
-                    if (map.get((str.charAt(i))) == 1) {
+                    if (map.get((str.charAt(i))) == 1) { // Note not greater than 0
                         size++;
                     }
                 }
