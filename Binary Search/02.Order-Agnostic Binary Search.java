@@ -1,8 +1,8 @@
 /* Order-Agnostic Binary Search is a modified version of Binary Search algorithm.
 The intuition behind this algorithm is what if the order of the sorted array is not given.*/
+
 class Solution {
-    int binarysearch(int arr[], int n, int k) {
-        // code here
+    public static int binarysearch(int arr[], int n, int k) {
         int low = 0;
         int high = n-1;
         
