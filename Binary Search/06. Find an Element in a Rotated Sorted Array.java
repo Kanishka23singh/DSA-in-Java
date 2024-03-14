@@ -1,4 +1,4 @@
-public class Solution {
+lpublic class Solution {
     public int search(int[] nums, int target) {
         int minIdx = findMinIndex(nums);
 
