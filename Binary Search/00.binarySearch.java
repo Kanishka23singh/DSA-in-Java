@@ -1,3 +1,4 @@
+// Binary Search
 class Solution {
     public int binarySearch(int[] nums, int n, int target) {
         int low = 0;
