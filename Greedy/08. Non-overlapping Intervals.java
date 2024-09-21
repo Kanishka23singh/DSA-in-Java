@@ -11,11 +11,11 @@ Explanation: [1,3] can be removed and the rest of the intervals are non-overlapp
 class Solution {
     public int eraseOverlapIntervals(int[][] intervals) {
         Arrays.sort(intervals,(a,b)->Integer.compare(a[1],b[1]));
-        int n = intervals.length - 1; // To store non overlapping interval
-        int cnt = 0;
+        int n = intervals.length; 
+        int cnt = 0; // To store non overlapping interval
         int end = intervals[0][1];
 
-        for(int i = 1; i <= n; i++){
+        for(int i = 1; i < n; i++){
             if(intervals[i][0] >= end){
                 cnt++;
                 end = intervals[i][1];
