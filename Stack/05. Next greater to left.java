@@ -6,7 +6,7 @@ class Solution
         int nge[] = new int[arr.length];
         Stack<Integer> st = new Stack<>();
         // -a+ --> pop ans push
-        for(int i = 0; i <= arr.length-1; i--){
+        for(int i = 0; i <= arr.length-1; i++){
             while(st.size() > 0 && arr[i] >= st.peek()){
                 st.pop();
             }
